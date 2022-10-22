@@ -7,7 +7,10 @@ namespace Trattori.Services
         public Tractor Create(PostTractorModel tractor);
         public Tractor GetDetails(int id);
 
-        public List<Tractor> GetAllTractorsByFilter(int filter);
+        public List<Tractor> GetAll(TractorQueryModel tractorQueryModel);
+
+        public List<Tractor> GetTractorsByGadgets(int idGadget);
+
 
         public Tractor Update(int id, PostTractorModel newTractor);
 

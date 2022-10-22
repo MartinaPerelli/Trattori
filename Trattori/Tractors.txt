@@ -1,0 +1,1 @@
+[{"Id":2,"Model":"string","Brand":"string","Color":1,"Gadgets":[{"Id":0,"GadgetName":"string"}]},{"Id":3,"Model":"string","Brand":"string","Color":1,"Gadgets":[{"Id":0,"GadgetName":"string"}]}]

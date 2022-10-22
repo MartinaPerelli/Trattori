@@ -1,3 +1,4 @@
+using Trattori.DAL;
 using Trattori.Models;
 using Trattori.Services;
 
@@ -10,7 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IList<Tractor>>(new List<Tractor>());
-builder.Services.AddSingleton<ITractorService, TractorService>();
+builder.Services.AddSingleton<IDal, TractorOnFile>();
+builder.Services.AddSingleton<ITractorOnFileService, TractorOnFileService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
